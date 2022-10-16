@@ -1,7 +1,9 @@
 <template>
   <nav>
     <router-link to="/">Accueil</router-link> |
-    <router-link to="/about">A propos</router-link>
+    <router-link to="/about">A propos</router-link> |
+    <router-link :to="{ name: 'ProductRoute', params : {productName: 'Computer'}}">Produit 1</router-link> |
+    <router-link :to="{ name: 'ProductRoute', params : {productName: 'Smartphones'}}">Produit 2</router-link>
   </nav>
   <router-view />
 </template>
